@@ -1,0 +1,27 @@
+1. //div
+2. //div[h2]
+3. //*[contains(@class,'text-title')]/parent::*
+4. (//*/span[contains(@class,'meteostation-name')])[last()]
+5. //*[contains(@class,'text-title')]   #not sure what question 5 is refering to, let me know on the feedback :)
+6. //header//a[@href]
+
+8.//*[text() = "Airports "]/..//div[@class="catalog-item" and contains(.,"London") and contains(.,"Ontario, ") and contains(.,"Canada")]
+9.//*[text() = "Airports "]/..//div[@class="catalog-item" and contains(.,"London") and contains(.,"Ontario, ") and contains(.,"Canada")]/following-sibling::*[1]
+
+11.//*[contains(@class,"section section-content section-bottom-collapse")]            ***********    
+12.//*[contains(@class,"section section-content section-bottom-collapse")]//div[@class="weathertab weathertab-block tooltip"]
+13.//*[@class = "section section-content section-bottom-collapse"]//div[@class="weathertab weathertab-block tooltip"]//*[@class="unit unit_temperature_c"]
+14.
+
+	CSS
+1. div
+2. div h2
+3. .text-title  //this does not allow to get the parents or where they are contained
+
+
+6.header a[href]
+
+
+11. .section.section-content.section-bottom-collapse
+12. .section.section-content.section-bottom-collapse div.weathertab.weathertab-block.tooltip
+13. .section.section-content.section-bottom-collapse div.weathertab.weathertab-block.tooltip .unit.unit_temperature_c
